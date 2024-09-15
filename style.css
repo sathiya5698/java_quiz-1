@@ -1,0 +1,120 @@
+/* initially set properties */
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family:'poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+/* giving color to website body */
+body
+{
+    background:thistle;
+}
+
+/* main div style */
+.app
+{
+    background: white;
+    width: 90%;
+    max-width: 600px;
+    margin: 100px auto 0;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+/* main heading style */
+.app h1
+{
+    font-size: 25px;
+    text-align: center;
+    color: darkviolet;
+    font-weight: 600;
+    border-bottom: 1px solid #333;
+    padding-bottom: 30px;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: slideIn 1.5s ease-out forwards;
+}
+
+@keyframes slideIn
+{
+    0%
+    {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100%
+    {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Quiz part style  */
+.quiz
+{
+    padding: 20px 0;
+}
+
+/* Quiz questions style */
+.quiz h2
+{
+    font-size: 18px;
+    color:black;
+    font-weight: 600;
+}
+
+/* Style to Option button */
+.btn
+{
+    background: white;
+    color: #222;
+    font-weight: 500;
+    width: 100%;
+    border: 1px solid #222;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+/* Giving hover property to option button */
+.btn:hover:not([disabled])
+{
+    background: #222;
+    color: #fff;
+}
+
+.btn:disabled
+{
+    cursor : no-drop;
+}
+
+/* style to next button */
+#next-btn
+{
+    background: #001e4d;
+    color: #fff;
+    font-weight: 500;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+}
+
+.correct
+{
+    background: #9aeabc;
+}
+
+.incorrect 
+{
+    background: #ff9393;
+}
